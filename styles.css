@@ -1,0 +1,104 @@
+:root{
+    --Main_grey-90: #232C44;
+    --Main_grey-80: #3B4459;    
+    --Main_grey-70: #6C7383;
+    --Main_grey-50: #CED0D6;
+
+    --white: #FFFFFF;
+    --white-80: rgba(255, 255, 255, 0.80);
+}
+
+@font-face {
+    font-family: FuturaBold;
+    src: url('./fonts//FuturaPT-Bold.ttf');
+}
+
+@font-face {
+    font-family: FuturaMedium;
+    src: url('./fonts//FuturaPT-Medium.ttf');
+}
+
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 240px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+
+    display: flex;
+    padding: 26px 16px 48px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    background-color: var(--Main_grey-90);
+}
+
+a {
+    text-decoration:none;
+    color: inherit;
+}
+
+.firstLevel, .secondLevel {
+    display: flex;
+    height: 24px;
+    align-items: center;
+    color: var(--white);
+
+    font-family: FuturaMedium;
+    font-size: 20px;
+    line-height: 24px; /* 120% */
+}
+
+
+.firstLevel {
+    width: 216px;
+    padding: 7px 12px 9px 12px;
+}
+
+.secondLevel {
+    width: 192px;
+    padding: 7px 12px 9px 36px;
+}
+
+.activeSideNav {
+    color: var(--white-80);
+    background: var(--Main_grey-70, #6C7383);
+    border-radius: 8px;
+}
+
+.firstLevel:hover{
+    color: var(--white-80);
+    background: var(--Main_grey-70);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.secondLevel:hover {
+    color: var(--white-80);
+    background: var(--Main_grey-50);
+    border-radius: 8px;
+    cursor: pointer;
+}   
+
+.sidenav h1 {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+h1 {
+    color: var(--White, #FFF);
+    font-family: FuturaBold;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+p {
+    /* Text */
+    font-family: FuturaMedium;
+    font-size: 20px;
+    line-height: 24px; /* 120% */
+}
