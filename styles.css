@@ -1,4 +1,7 @@
 :root{
+    --neutral-100: #0B1530;
+    --neutral-20: #F5F6F8;
+
     --Main_grey-90: #232C44;
     --Main_grey-80: #3B4459;    
     --Main_grey-70: #6C7383;
@@ -89,8 +92,12 @@ a {
     cursor: pointer;
 }
 
+h1, h2{
+    margin: 0;
+}
+
 h1 {
-    color: var(--White, #FFF);
+    color: var(--white);
     font-family: FuturaBold;
     font-size: 40px;
     text-transform: uppercase;
@@ -101,4 +108,88 @@ p {
     font-family: FuturaMedium;
     font-size: 20px;
     line-height: 24px; /* 120% */
+}
+
+.mainContent {
+    display: flex;
+    width: 1032px;
+    max-width: 1032px;
+    padding: 88px 104px 200px 104px;
+    flex-direction: column;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 272px);
+    min-height: 100vh;
+}
+
+.mainContent .contentBlock{
+    padding-bottom: 64px;
+}
+
+.mainContent .contentBlock:last-child{
+    padding-bottom: 0
+}
+
+.mainContent p {
+    color: var(--neutral-100);
+    max-width: 700px;
+    font-size: 20px;    
+    margin: 0;
+}
+
+.mainContent h1 {
+    color: var(--neutral-100);
+    padding-bottom: 32px;
+    font-size: 60px;
+}   
+
+.mainContent h2 {
+    color: var(--neutral-100);
+    padding-bottom: 28px;
+    font-family: FuturaMedium;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px
+}
+
+.manyTexts * {
+    padding-bottom: 16px;
+}
+
+.manyTexts *:last-child {
+    padding-bottom: 0;
+}
+
+.principlesBlock {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 64px;
+}
+
+.principlesElement{
+    margin-right: 24px;
+    margin-bottom: 24px;
+    width: 280px;
+    padding: 24px;
+    background-color: var(--neutral-20);
+    border-radius: 24px;
+    height: 147px;
+
+    font-family: FuturaMedium;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.principlesBlock *:nth-child(3n) {
+    margin-right: 0;
+}
+
+.principlesElement:hover{
+    cursor: pointer;
 }
