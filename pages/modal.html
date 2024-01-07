@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+
+    <body>
+    <!-- Side navigation -->
+        <div class="sidenav">
+            <h1><a href="../index.html">Meile</a></h1>
+            <div class="sidenavWrapper" id="sidenavContent">
+                <a class="firstLevel" id="navbarFirstLevel1" href="about.html">О дизайн системе</a>
+                <a class="firstLevel" id="navbarFirstLevel2">Цвета</a>
+                <a class="firstLevel" id="navbarFirstLevel3">Типографика</a>
+                <a class="firstLevel" id="navbarFirstLevel4">Сетка</a>
+                <a class="firstLevel"  id="navbarFirstLevel5">Навигация</a>
+                <div id="secondLevel5" hidden>
+                    <a class="secondLevel" id="navbarSecondtLevel5_1" href="tabs.html">Tabs</a>
+                    <a class="secondLevel" id="navbarSecondtLevel5_2" href="breadcrumbs.html">BreadCrumbs</a>
+                    <a class="secondLevel" id="navbarSecondtLevel5_3" href="steps.html">Steps</a>
+                </div>
+                <a class="firstLevel activeSideNav" id="navbarFirstLevel6">Компоненты</a>
+                <div id="secondLevel6">
+                    <a class="secondLevel" id="navbarSecondtLevel6_1" href="buttons.html">Buttons</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_2" href="checkbox.html">Checkbox</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_3" href="radioButton.html">RadioButton</a>
+                    <a class="secondLevel activeSecondLevelSideNav" id="navbarSecondtLevel6_4" href="modal.html">Modal</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_5" href="icons.html">Icons</a>
+                </div> 
+                <a class="firstLevel" id="navbarFirstLevel7">Изображения</a>
+                <a class="firstLevel" id="navbarFirstLevel8">Загрузка контена</a>
+            </div>
+        </div>
+        <div class="page">
+            <div class="mainContent">
+                <h1 class="beforeMenu">Modal</h1>
+                <div class="contentBlock">
+                    <div class="menuWrapper">
+                        <div class="tab">
+                            <button class="tablinks active" onclick="openCity(event, 'design')">Дизайн</button>
+                            <button class="tablinks" onclick="openCity(event, 'html')">HTML</button>
+                            <button class="tablinks" onclick="openCity(event, 'css')">CSS</button>
+                            <button class="tablinks" onclick="openCity(event, 'js')">JS</button>
+                        </div>
+                        
+                        <div id="design" class="tabcontent tabModal" style="display: flex;">
+                            <div class="singleTabWrapper">
+                                <div class="menuTab ">
+                                    <div class="modal">
+                                        <div>
+                                            <div class="crossWrapper">
+                                                <h2>Заголовок короткий или любой</h2>
+                                                <img src="../img/cross.svg"/>
+                                            </div>
+                                            <p>Текст сообщения для пользователя, если он длинный, то переносится на несколько строк.</p>
+                                        </div>
+                                        <div class="modalButtonWrapper">
+                                            <button class>Сохранить</button>
+                                            <button class="secondaryButton">Button</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="html" class="tabcontent">
+                            <code>chevo chevo html<code>
+                        </div>
+                        
+                        <div id="css" class="tabcontent">
+                            <code>chevo chevo css<code>
+                        </div>
+
+                        <div id="js" class="tabcontent">
+                            <code>chevo chevo js<code>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBlock">
+                    <h2>Когда использовать</h2>
+                    <div class="manyTexts">
+                        <p>Используйте модальное окно для второстепенного содержимого страниц, которое требуется только в некоторых случаях, или для того, чтобы сосредоточить внимание пользователя на совершаемом действии.</p>
+                        <p>Модальное окно появляется поверх страницы, затемняя ее. Это помогает сфокусировать внимание пользователя на конкретных действиях, не теряя при этом общий контекст.</p>
+                    </div>
+                    <div class="principlesBlock" style="padding-top: 28px;">
+                        <div class="whenToUseGreen whenToUseGreenAverage">
+                            <img src="../img//tick.svg">
+                            <p>Заголовок должен быть кратким (1-3 слова) и являться названием процесса или объекта.</p>
+                        </div>
+                        <div class="whenToUseGreen whenToUseGreenAverage">
+                            <img src="../img//tick.svg">
+                            <p>В правом верхнем углу модального окна всегда должна быть кнопка закрытия 
+                            в виде крестика.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="contentBlock">
+                    <h2>Расположение на странице</h2>
+                    <p>По горизонтали модальное окно позиционируется по центру. По вертикали — <br>
+                        по центру и на 10% смещенным к верхней части окна браузера. </p>
+                    <div class="exampleMenuWrapper">
+                        <img src="../img/modal_example.svg" />
+                        </div>
+                </div>
+                <div class="contentBlock">
+                    <h2>Анатомия элемента</h2>
+                    <p>Ниже представлен увеличенный элемент и его ключевые размеры исходя из модульной сетки дизайн-системы MEILE.</p>
+                    <div class="exampleMenuWrapper">
+                       <img src="../img/modal_anatomy.svg" />
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <p>© 2023–2024 Университет ИТМО</p>
+                <caption><p>Учебный проект</p></caption>
+            </div>
+        </div>
+    </body>         
+</html>
+
+<script src="../script.js"></script>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+
+    <body>
+    <!-- Side navigation -->
+        <div class="sidenav">
+            <h1><a href="../index.html">Meile</a></h1>
+            <div class="sidenavWrapper" id="sidenavContent">
+                <a class="firstLevel" id="navbarFirstLevel1" href="about.html">О дизайн системе</a>
+                <a class="firstLevel" id="navbarFirstLevel2">Цвета</a>
+                <a class="firstLevel" id="navbarFirstLevel3">Типографика</a>
+                <a class="firstLevel" id="navbarFirstLevel4">Сетка</a>
+                <a class="firstLevel activeSideNav"  id="navbarFirstLevel5">Навигация</a>
+                <div id="secondLevel5" >
+                    <a class="secondLevel activeSecondLevelSideNav" id="navbarSecondtLevel5_1">Tabs</a>
+                    <a class="secondLevel" id="navbarSecondtLevel5_2" href="breadcrumbs.html">BreadCrumbs</a>
+                    <a class="secondLevel" id="navbarSecondtLevel5_3" href="steps.html">Steps</a>
+                </div>
+                <a class="firstLevel" id="navbarFirstLevel6">Компоненты</a>
+                <div id="secondLevel6" hidden>
+                    <a class="secondLevel" id="navbarSecondtLevel6_1" href="buttons.html">Buttons</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_2" href="checkbox.html">Checkbox</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_3" href="radioButton.html">RadioButton</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_4" href="modal.html">Modal</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_5" href="icons.html">Icons</a>
+                </div> 
+                <a class="firstLevel" id="navbarFirstLevel7">Изображения</a>
+                <a class="firstLevel" id="navbarFirstLevel8">Загрузка контена</a>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="mainContent">
+                <h1 class="beforeMenu">Tabs</h1>
+                <div class="contentBlock">
+                    <div class="menuWrapper">
+                        <div class="tab">
+                            <button class="tablinks active" onclick="openCity(event, 'design')">Дизайн</button>
+                            <button class="tablinks" onclick="openCity(event, 'html')">HTML</button>
+                            <button class="tablinks" onclick="openCity(event, 'css')">CSS</button>
+                        </div>
+                        
+                        <div id="design" class="tabcontent" style="display: flex;">
+                            <div class="singleTabWrapper">
+                                <div class="menuTab menuTab__selected">
+                                    <p class="bolderText">Выбор места</p>
+                                </div>
+                                <span class="singleTabCaption">Selected</span>
+                            </div>
+
+                            <div class="singleTabWrapper">
+                                <div class="menuTab" >
+                                    <p class="bolderText">Оформление</p>
+                                </div>
+                                <span class="singleTabCaption">Normal</span>
+                            </div>
+
+                            <div class="singleTabWrapper">
+                                <div class="menuTab menuTab__hover" >
+                                    <p class="bolderText">Оплата бронирования</p>
+                                </div> 
+                                <span class="singleTabCaption">Hover</span>
+                            </div>
+
+                            <div class="singleTabWrapper">
+                                <div class="menuTab menuTab__disabled" >
+                                    <p class="bolderText">Подтверждение</p>
+                                </div>
+                                <span class="singleTabCaption">Disabled</span>
+                            </div>
+
+                        </div>
+                        
+                        <div id="html" class="tabcontent">
+                            <code>chevo chevo html<code>
+                        </div>
+                        
+                        <div id="css" class="tabcontent">
+                            <code>chevo chevo css<code>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBlock">
+                    <h2>Когда использовать</h2>
+                    <p>Инструмент навигации — переключают разделы или типы контента на странице. 
+                        Хорошо, если текст будет коротким и лаконичным, а табы — примерно одинаковой длины.</p>
+                    <div class="principlesBlock">
+                        <div class="whenToUseGreen">
+                            <img src="../img//tick.svg">
+                            <p >Табы группируют контент и помогают в навигации.</p>
+                        </div>
+                        <div class="whenToUseGreen">
+                            <img src="../img//tick.svg">
+                            <p>В табах можно использовать иконки из дизайн-системы MEILE.</p>
+                        </div>
+                        <div class="whenToUseGreen">
+                            <img src="../img//tick.svg">
+                            <p>Используйте для второстепенной навигации по странице.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBlock">
+                    <h2>Название</h2>
+                    <p>Называйте табы существительными или прилагательными в значении существительных. Например, «Авиабилеты», «Отели», «Рестораны», «Новое».</p>
+                    <div class="exampleMenuWrapper">
+                        <div class="singleTabWrapper">
+                            <span class="singleTabCaption correct">Правильно</span>
+                            <div class="menuTab menuTab__selected">
+                                <p class="bolderText">Выбор места</p>
+                            </div>
+                        </div>
+                        <div class="singleTabWrapper">
+                            <span class="singleTabCaption incorrect">Неправильно</span>
+                            <div class="menuTab menuTab__selected" >
+                                <p class="bolderText">Оформление</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBlock">
+                    <h2>Анатомия элемента</h2>
+                    <p>Ниже представлен увеличенный элемент и его ключевые размеры исходя из модульной сетки дизайн-системы MEILE.</p>
+                    <div class="exampleMenuWrapper">
+                       <img src="../img/tabs_anatomyExample1.svg" />
+                       <img src="../img/tabs_anatomyExample2.svg" />
+                    </div>
+                </div>
+                <div class="contentBlock">
+                    <h2>Цвет</h2>
+                    <div class="manyTexts">
+                        <p>Полоска-маркер красится в цвет Main_blue/100. Если в табе используется иконка, то ее цвет должен совпадать с цветом текста. Используйте один цвет на весь сервис.</p>
+                        <p>При наведении полоса у пункта окрашивается в Main_grey/50.</p>
+                    </div>
+                    <div class="exampleMenuWrapper">
+                        <div class="singleTabWrapper">
+                            <span class="singleTabCaption correct">Правильно</span>
+                            <div class="menuTab menuTab__hover">
+                                <p class="bolderText">Покупка билетов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBlock">
+                    <h2>Область нажатия</h2>
+                    <p>Делайте кликабельную область большого размера, чтобы в неё проще было попасть курсором.</p>
+                    <div class="exampleMenuWrapper noCaptions">
+                        <div class="singleTabWrapper">
+                            <div class="menuTab menuTab__selected">
+                                <p class="bolderText">Выбор места</p>
+                            </div>
+                        </div>
+                        <div class="singleTabWrapper ">
+                            <div class="menuTab menuTab correctBackground">
+                                <p class="bolderText">Оплата бронирования</p>
+                            </div>
+                        </div>
+                        <div class="singleTabWrapper">
+                            <div class="menuTab menuTab">
+                                <p class="bolderText">Оплата бронирования</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <p>© 2023–2024 Университет ИТМО</p>
+                <caption><p>Учебный проект</p></caption>
+            </div>
+        </div>
+    </body>         
+</html>
+
+<script src="../script.js"></script>

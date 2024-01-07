@@ -1,5 +1,11 @@
 :root{
+    --agua: #EBFFF9;
+
     --neutral-100: #0B1530;
+    --neutral-70: #6C7383;
+    --neutral-50: #CED0D6;
+    --neutral-40: #E7E8EA;
+    --neutral-30: #EFF0F3;
     --neutral-20: #F5F6F8;
 
     --Main_grey-90: #232C44;
@@ -9,6 +15,13 @@
 
     --white: #FFFFFF;
     --white-80: rgba(255, 255, 255, 0.80);
+
+    --blue--120: #2767FB;
+    --blue-100: #457BF8;
+    --blue-80: #6E98FA;
+    --blue-20: #C1D3FD;
+
+    --Condition-colors-Error_100: #E6251A;
 }
 
 @font-face {
@@ -18,9 +31,32 @@
 
 @font-face {
     font-family: FuturaMedium;
-    src: url('./fonts//FuturaPT-Medium.ttf');
+    src: url("./fonts/FuturaPT-Book.ttf");
 }
 
+@font-face {
+    font-family: Futura;
+    src: url('./fonts//FuturaPT-Medium.ttf');
+
+}
+
+.bolderText{
+    font-family: Futura;
+}
+
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+ }
+
+ .correct{
+    color: #0FBC7E;
+ }
+
+ .incorrect{
+    color: #FA4646
+ }
 
 /* The sidebar menu */
 .sidenav {
@@ -40,8 +76,11 @@
     background-color: var(--Main_grey-90);
 }
 
-a {
-    text-decoration:none;
+.sidenavWrapper a, h1 a  {
+    text-decoration: none;
+}
+
+h1 a:visited{
     color: inherit;
 }
 
@@ -73,6 +112,12 @@ a {
     border-radius: 8px;
 }
 
+.activeSecondLevelSideNav {
+    color: var(--white);
+    background: var(--neutral-70);
+    border-radius: 8px;
+}
+
 .firstLevel:hover{
     color: var(--white-80);
     background: var(--Main_grey-70);
@@ -100,7 +145,6 @@ h1 {
     color: var(--white);
     font-family: FuturaBold;
     font-size: 40px;
-    text-transform: uppercase;
 }
 
 p {
@@ -124,6 +168,10 @@ p {
     right: 0;
     width: calc(100% - 272px);
     min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .mainContent .contentBlock{
@@ -134,9 +182,9 @@ p {
     padding-bottom: 0
 }
 
-.mainContent p {
+p {
     color: var(--neutral-100);
-    max-width: 700px;
+    max-width: 680px    ;
     font-size: 20px;    
     margin: 0;
 }
@@ -192,4 +240,548 @@ p {
 
 .principlesElement:hover{
     cursor: pointer;
+}
+
+.aboutList{
+    list-style: none;
+}
+
+.aboutList li {
+    padding-bottom: 20px;
+}
+
+.aboutListHeader{
+    line-height: 24px;
+    vertical-align: middle;
+    font-family: FuturaBold;
+}
+
+.aboutListText{
+    padding-left: 38px;
+}
+
+.aboutListHeader:before{
+    content: "";
+    background-image:url('img/tick.jpg');
+    background-size: 100% 100%;
+    background-size: contain;
+    display: inline-block;
+
+    height: 24px;
+    width: 24px;
+
+    position: relative;
+    top: 6px;
+
+    margin-right: 14px;
+}
+
+#footer {
+   margin-top: auto;
+   padding-left: 104px;
+   padding-bottom: 43px;
+}
+
+#secondLevel5, #secondLevel6{
+    padding-top: 4px ;
+}
+
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: var(--Neutral-100);
+    /* Text */
+    font-family: FuturaMedium;
+    font-size: 20px;
+    line-height: 24px; 
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+    border-radius: 16px 16px 0 0 ;
+
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: var(--neutral-20);
+    border: none;
+    border-radius: 16px 16px 0 0 ;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    border-top: none;
+    width: 636px;
+    height: 68px;
+    padding: 94px 66px 118px 66px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neutral-20);
+    border-radius: 0 24px 24px 24px;
+}
+
+.singleTabContent{
+    width: 680px;
+    height: 166px;
+    padding: 0;
+    display: flex; 
+    margin-top: 28px; 
+    border-radius: 24px;
+}
+
+.whiteBackground {
+    background-color: var(--white);
+    border: 18px solid;
+    border-color: var(--neutral-20);
+}
+
+.beforeMenu{
+    padding-bottom: 54px !important;
+}
+
+.singleTabWrapper{
+    margin-right: 32px;
+}
+
+.menuTab{
+    padding-bottom: 8px;
+}
+
+.menuTab__selected, .menuTab__hover{
+    position:relative;
+}
+
+.menuTab__selected::after, .menuTab__hover::after{
+    border-radius: 2px;
+    position: absolute;
+    content:'';
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.menuTab__selected::after{
+    border: 2px solid var(--blue-100);
+}
+
+.menuTab__hover::after {
+    border: 2px solid var(--neutral-50);
+}
+
+.singleTabWrapper:nth-last-child(1){
+    margin-right: 0
+}
+
+.menuTab__disabled p {
+    color: var(--neutral-50);
+}
+
+.singleTabWrapper{
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.singleTabCaption{
+    font-family: FuturaMedium;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 18px; 
+}
+
+.whenToUseGreen{
+    display: flex;
+    width: 192px;
+    min-height: 124px;
+    padding: 24px 24px 28px 24px;
+    margin-right: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 24px;
+    gap: 8px;
+    background-color: var(--agua);
+}
+
+.whenToUseGreenBig{
+    width: 280px;
+    height: 176px;
+}
+
+
+.exampleMenuWrapper{
+    padding-top: 28px;
+    display: flex;
+}
+
+.exampleMenuWrapper img{
+    margin-right: 24px;
+}
+
+.noCaptions{
+    height: 24px;
+}
+
+.correctBackground{
+    background-color: var(--agua);
+    padding: 4px;
+}
+
+.breadcrumb::before{
+    content: "";
+    background-image:url('img/breadcrumbs.svg');
+    background-size: 100% 100%;
+    display: inline-block;
+
+    height: 16px;
+    width: 8px;
+
+    position: relative;
+    top: 2px;
+    padding-right: 8px;
+}
+
+.breadcrumbHover::before {
+    background-image:url('img/breadcrumbsHover.svg');
+}
+
+.breadcrumb{
+    color: var(--blue-100);    
+}
+
+.breadcrumbHover{
+    color: var(--blue-80);    
+}
+
+button{
+    display: flex;
+    padding: 16px 36px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    background: var(--blue-100);
+    color: var(--white);
+    font-family: FuturaMedium;
+    font-size: 20px;
+    line-height: 24px; 
+}
+
+.iconButton{
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.secondaryButton{
+    background-color: var(--neutral-30);
+    color: var(--blue-100);
+}
+
+.tertiaryButton{
+    background:none;
+    color: var(--blue-100);
+}
+
+.buttonHover{
+    background-color: var(--blue-80);
+}
+
+.buttonActive{
+    background-color: var(--blue--120);
+}
+
+.buttonDisabled{
+    background-color: var(--blue-20);
+}
+
+.buttonSecondaryActive{
+    background-color: var(--neutral-50);
+    color: var(--blue-100);
+}
+
+.buttonTertiaryActive{
+    background-color: var(--neutral-40);
+    color: var(--blue-100);
+}
+
+.buttonSecondaryDisabled{
+    color: var(--blue-80);
+    background-color: var(--neutral-20);
+}
+
+.buttonTertiaryDisabled{
+    background: none;
+    color: var(--blue-80);
+}
+
+.manyButtons{
+    height: 230px;
+    align-items: flex-start;
+    padding-top: 32px;
+    margin-bottom: 32px;
+}
+
+.buttonsIcon{
+    height: 158px;
+    align-items: flex-start;
+    padding-top: 32px;
+    margin-bottom: 32px; 
+}
+
+.threeItems button {
+    margin-bottom: 28px;
+}
+
+.threeItems *:nth-child(2){
+    margin-bottom: 36px;
+}
+
+.exampleMenuWrapper .menuTab img{
+    margin-right: 8px;
+}
+
+.marginEight{
+    margin-right: 8px;
+}
+
+.iconRight{
+    padding-left: 8px;
+}
+
+.noHeight{
+    height: 152px;
+}
+
+input[type="checkbox"]{
+    margin: 0;
+    width: 24px;
+    height: 24px; 
+    border: none;  
+    border-radius: 8px;
+    background-color: var(--neutral-30);
+}
+
+.customCheckbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.customCheckbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.customCheckbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-radius: 8px;
+    margin-right: 12px;
+    background-color: var(--neutral-30);
+}
+
+.radioInput+label::before {
+    border-radius: 30px;
+}
+
+.customLabel{
+    color: var(--Neutral-100);
+    font-family: FuturaMedium;
+    font-size: 20px;
+    line-height: 24px; 
+}
+
+.checkedInput+label::before {
+    background-image: url('img/tickCheckbox.svg');
+}
+
+.radioInputChecked+label::before {
+    border: 30px;
+    height: 12px;
+    width: 12px;
+    border: 6px solid;
+    background-color: var(--white);
+    border-color: var(--blue-100);
+
+}
+
+.checkboxTab{
+    height: 124px;
+    align-items: flex-start;
+    padding: 55px 163px;
+    width: 410px;
+}
+.hugeMargin{
+    padding-bottom: 28px;
+    height: 24px;
+}
+
+.chekboxWrapper{
+    height: 124px;
+    margin-right: 34px;
+}
+
+.radioHover+label::before{
+    border-color: var(--blue-80);
+}
+
+.radioActive+label::before{
+    border-color: var(--blue--120);
+}
+
+.radioInputDisabled+label::before{
+    border-color: var(--blue-20);
+}
+
+.checkboxHover+label::before{
+    background-color: var(--neutral-40);
+}
+
+.checkboxActive+label::before{
+    background-color: var(--neutral-50);
+}
+
+.checkboxDisabled+label::before{
+    background-color: var(--neutral-20);
+}
+
+.checkedInputHover+label::before{
+    background-image: url('img/tickCheckboxHover.svg');
+}
+
+.checkedInputActive+label::before{
+    background-image: url('img/tickCheckboxActive.svg');
+}
+
+.checkedInputDisabled+label::before{
+    background-image: url('img/tickCheckboxDisabled.svg');
+}
+
+.errorCheckbox+label::before{
+    background: none;
+    border: 2px solid var(--Condition-colors-Error_100);
+}
+
+.checkboxValidationWrapper{
+    margin-top: 28px;
+}
+
+.checkboxValidationWrapper * {
+    padding-bottom: 16px;
+}
+
+.checkboxValidationWrapper p{
+    padding: 0;
+}
+
+.whenToUseRadio{
+    padding-top: 0;
+    padding-bottom: 28px;
+}
+
+.radioExampleWrapper{
+    padding-top: 20px;
+    display: flex;
+    gap: 28px;
+}
+
+.inputRadioWrapper {
+    padding-bottom: 16px;
+}
+
+.inputRadioWrapper:last-child{
+    padding-bottom: 0;
+}
+
+input[type='radio'] + .radioError{
+    width: 12px;
+    height: 12px;
+}
+
+.tabModal{
+    width: 584px;
+    height: 260px;
+    padding: 52px 92px;
+    align-items: flex-start;
+
+}
+
+.modal{
+    padding: 24px 0 32px  32px ;
+    width: 546px;
+    height: 212px;
+    border-radius: 24px;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal h2{
+    font-family: FuturaBold;
+    font-size: 28px;
+    line-height: 36px; /* 128.571% */
+    width: 432px;
+    margin-right: 60px;
+}
+
+.modal p{
+    width: 434px;
+    font-family: Futura;
+}
+
+.modalButtonWrapper{
+    display: flex;
+}
+
+.modalButtonWrapper *{
+    margin-right: 16px;
+}
+
+.modalButtonWrapper *:last-child{
+    margin-right: 0;
+}
+
+.crossWrapper{
+    display: flex;
+    align-items: flex-start;
+}
+
+.crossWrapper img{
+    margin-top: 6px;
+    width: 24px;
+    height: 24px;
+}
+
+.whenToUseGreenAverage{
+    height: 128px;
+    width: 280px;
+}
+
+.iconsTop{
+    padding-top: 12px;
 }
