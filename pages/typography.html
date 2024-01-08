@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+
+    <body>
+    <!-- Side navigation -->
+        <div class="sidenav">
+            <h1><a href="../index.html">Meile</a></h1>
+            <div class="sidenavWrapper" id="sidenavContent">
+                <a class="firstLevel" id="navbarFirstLevel1" href="./about.html">О дизайн системе</a>
+                <a class="firstLevel" id="navbarFirstLevel2" href="./colors.html">Цвета</a>
+                <a class="firstLevel activeSideNav" id="navbarFirstLevel3" href="./typography.html">Типографика</a>
+                <a class="firstLevel" id="navbarFirstLevel4" href="./layout.html">Сетка</a>
+                <a class="firstLevel"  id="navbarFirstLevel5">Навигация</a>
+                <div id="secondLevel5" hidden>
+                    <a class="secondLevel" id="navbarSecondtLevel5_1" href="./tabs.html">Tabs</a>
+                    <a class="secondLevel" id="navbarSecondtLevel5_2" href="./breadcrumbs.html">BreadCrumbs</a>
+                    <a class="secondLevel" id="navbarSecondtLevel5_3" href="./steps.html">Steps</a>
+                </div>
+                <a class="firstLevel" id="navbarFirstLevel6">Компоненты</a>
+                <div id="secondLevel6" hidden>
+                    <a class="secondLevel" id="navbarSecondtLevel6_1" href="./buttons.html">Buttons</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_2" href="./checkbox.html">Checkbox</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_3" href="./radioButton.html">RadioButton</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_4" href="./modal.html">Modal</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_5" href="./icons.html">Icons</a>
+                </div>  
+                <a class="firstLevel" id="navbarFirstLevel7" href="./images.html">Изображения</a>
+                <a class="firstLevel" id="navbarFirstLevel8" href="./loading.html">Загрузка контена</a>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="mainContent">
+                <div class="contentBlock">
+                    <h1>Типографика</h1>
+                    <p>Ясное распределение шрифтовых размеров и стилей поможет упорядочить и систематизировать информацию, что упростит навигацию в интерфейсе.</p>
+                </div>
+                <div class="contentBlock">
+                    <h2>Шрифтовые стили</h2>
+                    <p>Основным шрифтом является Futura PT — классический геометрический шрифт без засечек. Используйте его во всех средствах коммуникации в качестве заголовков и подзаголовков, а также в качестве основного и вспомогательного текстов.</p>
+                    <div class="mainTypoWrapper">
+                        <span>Futura PT</span>
+                    </div>
+                    <div class="manyTexts paddingBottom">
+                        <P>Этот шрифт используются в 3 основных начертания:</P>
+                        <ul>
+                            <li>Bold — для заголовков;</li>
+                            <li>Medium — для акцентного шрифта;</li>
+                            <li>Book  — для набора основного текста.</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontent typoMenu mainTypoWeight" style="display: flex;" >
+                        <div class="mainTypoWrapper mainTypoExamples ">
+                            <div class="leftWrapper">
+                                <p>Font</p>
+                                <h1 class=" weight">Заголовок</h1>
+                                <h2 class=" weight">Акцент</h2>
+                                <p class=" weight">Текст</p>
+                            </div>
+                            <div >
+                                <p class="rightWeight">Weight</p>
+                                <p class="rightWeight"> Bold</p>
+                                <p class="rightWeight">Medium</p>
+                                <p>Book</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contentBlock">
+                    <h2>Размеры шрифта</h2>
+                    <p>Заголовки разных уровней должны быть хорошо различимы, для этого необходимо выбирать стили, которые не стоят рядом в представленном ниже списке. Это помогает пользователям выделять логику в тексте.</p>
+                    <div class="menuWrapper paddingTop28">
+                        <div class="tab">
+                            <button class="tablinks active" onclick="openCity(event, 'design')">Десктопная версия</button>
+                            <button class="tablinks" onclick="openCity(event, 'html')">Мобильная версия</button>
+                        </div>
+                        <div id="design" class="tabcontent typoMenu" style="display: flex;" >
+                            <div class="mainTypoWrapper mainTypoExamples">
+                                <div class="leftWrapper">
+                                    <p>Font</p>
+                                    <h1>Заголовок h1</h1>
+                                    <h2>Заголовок H2</h2>
+                                    <h3>Заголовок H3</h3>
+                                </div>
+                                <div class="rightWrapper">
+                                    <p>Size</p>
+                                    <p>60</p>
+                                    <p>40</p>
+                                    <p>28</p>
+                                </div>
+                                <div class="rightWrapper">
+                                    <p>Height</p>
+                                    <p>64</p>
+                                    <p>44</p>
+                                    <p>36</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div id="html" class="tabcontent typoMenu">
+                            <div class="mainTypoWrapper mainTypoExamples">
+                                <div class="leftWrapper">
+                                    <p>Font</p>
+                                    <h1 id="mobileH1">Заголовок h1</h1>
+                                    <h2 id="mobileH2">Заголовок H2</h2>
+                                    <h3 id="mobileH3">Заголовок H3</h3>
+                                </div>
+                                <div class="mobile rightWrapper ">
+                                </div>
+                                <div class="rightWrapper mobile">
+                                    <p>Size</p>
+                                    <p>36</p>
+                                    <p>24</p>
+                                    <p>20</p>
+                                </div>
+                                <div class="rightWrapper mobile">
+                                    <p>Height</p>
+                                    <p>44</p>
+                                    <p>28</p>
+                                    <p>26</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="contentBlock">
+                    <h2 class="beforeh3">Отступы различных элементов</h2>
+                    <h3>Заголовок</h3>
+                    <div class="manyTexts">
+                        <p>Отступы при заголовках разного уровня рассчитываются относительно размера текста в пикселях.</p>
+                        <p>Верхние отступы для отделения и структуризации информации больше размера текста. Нижние отступы, наоборот, чтобы текст сильно не отдалялся - меньше.</p>
+                    </div>
+                    <div class="exampleMenuWrapper">
+                        <img src="../img/typoH1.svg" />
+                    </div>
+                    <div class="exampleMenuWrapper">
+                        <img src="../img/typoH2.svg" />
+                    </div>
+                    <div class="exampleMenuWrapper beforeh3">
+                        <img src="../img/typoH3.svg" />
+                    </div>
+                    <h3>Текст</h3>
+                    <p>Расстояние между абзацами с текстом составляет 16 пикселей.
+                        Расстояние между буквами и словами — как в настройках шрифта.</p>
+                    <div class="exampleMenuWrapper">
+                        <img src="../img/typoText.svg" />
+                    </div>
+                    <p class="beforeh3">Основные текстовые блоки набираются шрифтом начертания “book”. Чтобы виделить информацию используйте начертания ”bold” и “medium”. Старайтесь выделать частично и только минимальную информацию, избегайте выделения целых блоков.</p>
+                    <h3>Списки</h3>
+                    <div class="manyTexts">
+                        <p>Списки состоят из связанного контента, сгруппированного и организованного вертикально. Чтобы показать вложенность элементов, делайте смещение кратное модулю.</p>
+                        <p>Для формирования маркерованного списка при использования списка, который начинается с числа или буквы без скобки, начинайте предложение с заглавной буквы и заканчиваете точкой. Если список начинается с числа со скобкой, то далее следует использовать слова с прописной буквы и использовать точку-запятую для перечисления.</p>
+                        <p>Если список предполагает следующее членение текста, то в конце него становится двоеточие. Если последующего членения не будет, то ставится точка.</p>
+                    </div>
+                    <div class="exampleMenuWrapper">
+                        <img src="../img/typoListMarked.svg" />
+                    </div>
+                    <p class="paddingTop28">Для формирования немаркерованного списка используйте списки с тире в виде маркера и начинайте с прописной буквы. </p>
+                    <div class="exampleMenuWrapper">
+                        <img src="../img/typoListUnmarked.svg" />
+                    </div>
+                </div>
+
+                <div class="contentBlock">
+                    <h2 class="beforeh3">Оформление текста</h2>
+                    <h3>Выравнивание текста</h3>
+                    <div class="manyTexts">
+                        <p>При выравнивании текста по горизонтали необходимо придерживаться выравнивания по левому краю.</p>
+                        <p>По вертикали выравнивайте по базовой линии.</p>
+                    </div>
+                    <div class="exampleMenuWrapper beforeh3">
+                        <img src="../img/typoAlign.svg" />
+                    </div>
+
+                    <h3>Знаки пунктуации</h3>
+                    <div class="manyTexts">
+                        <p>Следите, чтобы знаки пунктуации выступали за границу полей текста. Таким образом, текст выглядит выровненным.</p>
+                        <p>Кавычки и скобки не отбиваются пробелом от заключённых в них слов. Знаки препинания от скобок и кавычек никогда не должны быть отбиты.</p>
+                    </div>
+                    <div class="exampleMenuWrapper beforeh3">
+                        <img src="../img/typoPunctuation.svg" />
+                    </div>
+
+                    <p class="pBold">Кавычки</p>
+                    <div class="manyTexts">
+                        <p>Правильное и последовательное использование кавычек помогает читателю легче ориентироваться в тексте и понять авторскую идею. Их главная задача – выделять цитаты и прямую речь.</p>
+                        <p>Существуют следующие кавычки:</p>
+                        <ul>
+                            <li>одиночные (левая и правая): « и », используются в русскоязычных текстах;</li>
+                            <li>двойные (левая и правая): “ и ”, в русском языке чаще всего используются как дополнительные, то есть те, которые стоят внутри других кавычек.</li>
+                        </ul>
+                    </div>
+                    <div class="typoExampleWrapper beforeh3">
+                        <div class="manyTexts">
+                            <p>«Сказав: “Goodbye”, Варвара</p>
+                            <p>быстро вышла из комнаты.»</p>
+                        </div>
+                    </div>
+
+                    <p class="pBold">Тире</p>
+                    <div class="manyTexts">
+                        <p>Есть два вида тире:</p>
+                        <ul>
+                            <li>пунктуационное (длинное ­―), используется во всех пунктуационных случаях как знак препинания, выделяется пробелами;</li>
+                            <li>цифровое (короткое –), которое используется при обозначении диапазона дат или цифр, пробелами не выделяется.</li>
+                        </ul>
+                    </div>
+                    <div class="typoExampleWrapper beforeh3">
+                        <div class="manyTexts flexWow">
+                            <p>Летнее — Зимено</p>
+                            <p>11:20-11:45</p>
+                        </div>
+                    </div>
+
+                    <h3>Числа</h3>
+                    <p>При отображении числа разряды отделяются пробелом каждые три знака. Дробная часть отделяется запятой.</p>
+                    <div class="typoExampleWrapper beforeh3">
+                        <div class="manyTexts">
+                            <p>1 000 000,00</p>
+                        </div>
+                    </div>
+
+                    <h3>Телефонные номера</h3>
+                    <p>Используейте написание телефонного номера с указанием кода страны. Цифры отделяются согласно стандарту страны.</p>
+                    <div class="typoExampleWrapper beforeh3">
+                        <div class="manyTexts withLine">
+                            <p style="padding-bottom: 8px;">+X (XXX) XXX-XX-XX</p>
+                            <div class="aquaLine"></div>
+                            <p>+7 (911) 458-48-85</p>
+                        </div>
+                    </div>
+
+                    <h3>Знак валюты</h3>
+                    <p>Знак валюты отображается после числа (справа). В зарубежном варианте — до числа (слева).</p>
+                    <div class="typoExampleWrapper">
+                        <div class="manyTexts flexWow">
+                            <p>85 485 ₽</p>
+                            <p>$ 85 485 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contentBlock">
+                    <h2>Стандарты доступности</h2>
+                    <div class="manyTexts">
+                        <p>Для проверки доступности используется стандарт WCAG AA (уровень доступности AA, или AA-level), который подразумевает соблюдение коэффициента контрастности между текстом и фоном, который должен быть не ниже уровня  AA Large – для шрифта заголовков и AA – для основного текста.</p>
+                        <p>WCAG (Web Content Accessibility Guidelines) — это международные стандарты доступности веб-контента, которые разрабатываются и поддерживаются консорциумом <a href="https://www.w3.org/">W3C (World Wide Web Consortium)</a>.</p>
+                        <p>Воспользуйтесь этими критериями, чтобы убедиться, что ваши проекты соответствуют аспектам доступности.</p>
+                    </div>
+                </div>
+                    
+            </div>
+            <div id="footer">
+                <p>© 2023–2024 Университет ИТМО</p>
+                <caption><p>Учебный проект</p></caption>
+            </div>
+        </div>
+    </body>         
+</html>
+
+<script src="../script.js"></script>
