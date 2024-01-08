@@ -4,6 +4,7 @@
 
     --neutral-100: #0B1530;
     --neutral-70: #6C7383;
+    --neutral-60: #B6B9C1;
     --neutral-50: #CED0D6;
     --neutral-40: #E7E8EA;
     --neutral-30: #EFF0F3;
@@ -23,6 +24,10 @@
     --blue-20: #C1D3FD;
 
     --Condition-colors-Error_100: #E6251A;
+}
+
+#footer p:last-child{
+    color: var(--neutral-60) ;
 }
 
 @font-face {
@@ -91,7 +96,7 @@ h1 a:visited{
     align-items: center;
     color: var(--white);
 
-    font-family: FuturaMedium;
+    font-family: FuturaBold;
     font-size: 20px;
     line-height: 24px; /* 120% */
 }
@@ -105,11 +110,13 @@ h1 a:visited{
 .secondLevel {
     width: 192px;
     padding: 7px 12px 9px 36px;
+    font-family: FuturaMedium;
+
 }
 
 .activeSideNav {
-    color: var(--white-80);
-    background: var(--Main_grey-70, #6C7383);
+    color: var(--white);
+    background: var(--Main_grey-80, #6C7383);
     border-radius: 8px;
 }
 
@@ -119,19 +126,13 @@ h1 a:visited{
     border-radius: 8px;
 }
 
-.firstLevel:hover{
+.firstLevel:hover, .secondLevel:hover{
     color: var(--white-80);
     background: var(--Main_grey-70);
     border-radius: 8px;
     cursor: pointer;
 }
 
-.secondLevel:hover {
-    color: var(--white-80);
-    background: var(--Main_grey-50);
-    border-radius: 8px;
-    cursor: pointer;
-}   
 
 .sidenav h1 {
     padding-left: 10px;
@@ -243,8 +244,7 @@ p {
     background-color: var(--neutral-20);
     border-radius: 24px;
     height: 147px;
-
-    font-family: FuturaMedium;
+    font-family: FuturaBold;
     font-size: 28px;
     font-weight: 700;
     line-height: 36px;
@@ -344,7 +344,7 @@ p {
     display: none;
     border-top: none;
     width: 636px;
-    height: 68px;
+    height: 64px;
     padding: 94px 66px 118px 66px;
     justify-content: center;
     align-items: center;
@@ -363,7 +363,7 @@ p {
 
 .whiteBackground {
     background-color: var(--white);
-    border: 18px solid;
+    border: 16px solid;
     border-color: var(--neutral-20);
 }
 
@@ -409,7 +409,7 @@ p {
 }
 
 .singleTabWrapper{
-    height: 68px;
+    height: 64px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -461,7 +461,11 @@ p {
 
 .correctBackground{
     background-color: var(--agua);
-    padding: 4px;
+    padding: 4px 6px 4px  9px;
+}
+
+.correctBackBiggerPadding{
+    padding: 4px 7px 4px  8px;
 }
 
 .breadcrumb::before{
@@ -704,6 +708,8 @@ input[type="checkbox"]{
 .errorCheckbox+label::before{
     background: none;
     border: 2px solid var(--Condition-colors-Error_100);
+    width: 20px;
+    height: 20px;
 }
 
 .checkboxValidationWrapper{
@@ -753,7 +759,7 @@ input[type='radio'] + .radioError{
 .modal{
     padding: 24px 0 32px  32px ;
     width: 546px;
-    height: 212px;
+    height: 204px;
     border-radius: 24px;
     background: var(--white);
     display: flex;
@@ -767,11 +773,11 @@ input[type='radio'] + .radioError{
     line-height: 36px; /* 128.571% */
     width: 432px;
     margin-right: 60px;
+    padding-bottom: 16px;
 }
 
 .modal p{
     width: 434px;
-    font-family: Futura;
 }
 
 .modalButtonWrapper{
@@ -830,6 +836,10 @@ li{
     font-family: FuturaMedium;
     font-size: 20px;
     width: 654px;
+}
+
+.aboutList li::marker{
+    content: ""
 }
 
 li::marker{
