@@ -24,44 +24,45 @@
                     <a class="secondLevel" id="navbarSecondtLevel6_1" href="./buttons.html">Buttons</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_2" href="./checkbox.html">Checkbox</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_3" href="./radioButton.html">RadioButton</a>
-                    <a class="secondLevel activeSecondLevelSideNav" id="navbarSecondtLevel6_4" href="./modal.html">Modal</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_4" href="./modal.html">Modal</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_5" href="./icons.html">Icons</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_6" href="./calendar.html">DatePicker</a>
-                    <a class="secondLevel" id="navbarSecondtLevel6_7" href="./tags.html">Tags</a>
+                    <a class="secondLevel activeSecondLevelSideNav" id="navbarSecondtLevel6_7" href="./tags.html">Tags</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_8" href="./input.html">Input</a>
                 </div> 
                 <a class="firstLevel" id="navbarFirstLevel7" href="./images.html">Изображения</a>
                 <a class="firstLevel" id="navbarFirstLevel8" href="./loading.html">Загрузка контена</a>
             </div>
         </div>
+
         <div class="page">
             <div class="mainContent">
-                <h1 class="beforeMenu">Modal</h1>
+                <h1 class="beforeMenu">Tags</h1>
                 <div class="contentBlock">
                     <div class="menuWrapper">
                         <div class="tab">
                             <button class="tablinks active" onclick="openCity(event, 'design')">Дизайн</button>
                             <button class="tablinks" onclick="openCity(event, 'html')">HTML</button>
                             <button class="tablinks" onclick="openCity(event, 'css')">CSS</button>
-                            <button class="tablinks" onclick="openCity(event, 'js')">JS</button>
                         </div>
                         
-                        <div id="design" class="tabcontent tabModal" style="display: flex;">
-                            <div class="singleTabWrapper">
-                                <div class="menuTab ">
-                                    <div class="modal">
-                                        <div>
-                                            <div class="crossWrapper">
-                                                <h2>Заголовок короткий или любой</h2>
-                                                <img src="../img/cross.svg"/>
-                                            </div>
-                                            <p>Текст сообщения для пользователя, если он длинный, то переносится на несколько строк.</p>
-                                        </div>
-                                        <div class="modalButtonWrapper">
-                                            <button class>Сохранить</button>
-                                            <button class="secondaryButton">Button</button>
-                                        </div>
-                                    </div>
+                        <div id="design" class="tabcontent whiteBackground tagsTab" style="display: flex;" >
+                            <div class="menuTab">
+                                <div class="customTag">
+                                    <p>Отель</p>
+                                    <img src="../img/crossTags.svg  ">
+                                </div>
+                            </div>
+                            <div class="menuTab">
+                                <div class="customTag">
+                                    <p>Апартаменты</p>
+                                    <img src="../img/crossTags.svg  ">
+                                </div>
+                            </div>
+                            <div class="menuTab">
+                                <div class="customTag">
+                                    <p>Кемпинг</p>
+                                    <img src="../img/crossTags.svg  ">
                                 </div>
                             </div>
                         </div>
@@ -72,47 +73,50 @@
                         
                         <div id="css" class="tabcontent">
                             <code>chevo chevo css<code>
-                        </div>
 
-                        <div id="js" class="tabcontent">
-                            <code>chevo chevo js<code>
                         </div>
                     </div>
                 </div>
+            
+
                 <div class="contentBlock">
                     <h2>Когда использовать</h2>
                     <div class="manyTexts">
-                        <p>Используйте модальное окно для второстепенного содержимого страниц, которое требуется только в некоторых случаях, или для того, чтобы сосредоточить внимание пользователя на совершаемом действии.</p>
-                        <p>Модальное окно появляется поверх страницы, затемняя ее. Это помогает сфокусировать внимание пользователя на конкретных действиях, не теряя при этом общий контекст.</p>
+                        <p>Этот компонент нужен для оформления тегов — маркеров, которые объединяют группы статей, фотографий, документов или другие похожие объекты. Используйте группы, если вам нужно объединить теги по какому-то принципу.</p>
+                        <p>Если нужно предоставить пользователю возможность управлять набором тегов:<br>
+                            к тегу добавляется иконка удаления.</p>
                     </div>
-                    <div class="principlesBlock" style="padding-top: 28px;">
-                        <div class="whenToUseGreen whenToUseGreenAverage">
-                            <img src="../img//tick.svg">
-                            <p>Заголовок должен быть кратким (1-3 слова) и являться названием процесса или объекта.</p>
-                        </div>
-                        <div class="whenToUseGreen whenToUseGreenAverage">
-                            <img src="../img//tick.svg">
-                            <p>В правом верхнем углу модального окна всегда должна быть кнопка закрытия 
-                            в виде крестика.</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="contentBlock">
-                    <h2>Расположение на странице</h2>
-                    <p>По горизонтали модальное окно позиционируется по центру. По вертикали — <br>
-                        по центру и на 10% смещенным к верхней части окна браузера. </p>
                     <div class="exampleMenuWrapper">
-                        <img src="../img/modal_example.svg" />
+                        <div class="menuTab">
+                            <div class="customTag">
+                                <p>Отель</p>
+                                <img src="../img/crossTags.svg  ">
+                            </div>
                         </div>
+                        <div class="menuTab">
+                            <div class="customTag">
+                                <p>Апартаменты</p>
+                                <img src="../img/crossTags.svg  ">
+                            </div>
+                        </div>
+                        <div class="menuTab">
+                            <div class="customTag">
+                                <p>Кемпинг</p>
+                                <img src="../img/crossTags.svg  ">
+                            </div>
+                        </div>
+                    </div>
+                   
                 </div>
+
                 <div class="contentBlock">
                     <h2>Анатомия элемента</h2>
-                    <p>Ниже представлен увеличенный элемент и его ключевые размеры исходя из модульной сетки дизайн-системы MEILE.</p>
+                    <p>Ниже представлен элемент и его ключевые размеры исходя из модульной сетки дизайн-системы MEILE.</p>
                     <div class="exampleMenuWrapper">
-                       <img src="../img/modal_anatomy.svg" />
+                        <img src="../img/tagsAnatomy.svg">
                     </div>
                 </div>
+
             </div>
             <div id="footer">
                 <p>© 2023–2024 Университет ИТМО</p>

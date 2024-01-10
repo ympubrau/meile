@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+
+    <body>
+    <!-- Side navigation -->
+        <div class="sidenav">
+            <h1><a href="../index.html">Meile</a></h1>
+            <div class="sidenavWrapper" id="sidenavContent">
+                <a class="firstLevel" id="navbarFirstLevel1" href="./about.html">О дизайн системе</a>
+                <a class="firstLevel" id="navbarFirstLevel2" href="./colors.html">Цвета</a>
+                <a class="firstLevel" id="navbarFirstLevel3" href="./typography.html">Типографика</a>
+                <a class="firstLevel" id="navbarFirstLevel4" href="./layout.html">Сетка</a>
+                <a class="firstLevel"  id="navbarFirstLevel5">Навигация</a>
+                <div id="secondLevel5" hidden>
+                    <a class="secondLevel" id="navbarSecondtLevel5_1" href="./tabs.html">Tabs</a>
+                    <a class="secondLevel" id="navbarSecondtLevel5_2" href="./breadcrumbs.html">BreadCrumbs</a>
+                    <a class="secondLevel" id="navbarSecondtLevel5_3" href="./steps.html">Steps</a>
+                </div>
+                <a class="firstLevel activeSideNav" id="navbarFirstLevel6">Компоненты</a>
+                <div id="secondLevel6">
+                    <a class="secondLevel" id="navbarSecondtLevel6_1" href="./buttons.html">Buttons</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_2" href="./checkbox.html">Checkbox</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_3" href="./radioButton.html">RadioButton</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_4" href="./modal.html">Modal</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_5" href="./icons.html">Icons</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_5" href="./calendar.html">DatePicker</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_5" href="./tags.html">Tags</a>
+                    <a class="secondLevel activeSecondLevelSideNav" id="navbarSecondtLevel6_5" href="./input.html">Input</a>
+                </div> 
+                <a class="firstLevel" id="navbarFirstLevel7" href="./images.html">Изображения</a>
+                <a class="firstLevel" id="navbarFirstLevel8" href="./loading.html">Загрузка контена</a>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="mainContent">
+                <h1 class="beforeMenu">Input</h1>
+                <div class="contentBlock">
+                    <div class="menuWrapper">
+                        <div class="tab">
+                            <button class="tablinks active" onclick="openCity(event, 'design')">Дизайн</button>
+                            <button class="tablinks" onclick="openCity(event, 'html')">HTML</button>
+                            <button class="tablinks" onclick="openCity(event, 'css')">CSS</button>
+                        </div>
+                        
+                        <div id="design" class="tabcontent " style="display: flex;" >
+                            <div class="menuTab">
+                                <div class="myInput">
+                                    <label for="exampleTab">Название поля</label>
+                                    <input type="text" id="exampleTab" placeholder="Подсказка" autofocus>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="html" class="tabcontent">
+                            <code>chevo chevo html<code>
+                        </div>
+                        
+                        <div id="css" class="tabcontent">
+                            <code>chevo chevo css<code>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="contentBlock">
+                    <h2>Когда использовать</h2>
+                   
+                    <div class="principlesBlock" style="padding-top: 28px;">
+                        <div class="whenToUseGreen whenToUseGreenBiggie">
+                            <img src="../img//tick.svg">
+                            <p>Поле ввода дает возможность указать значение с помощью клавиатуры.</p>
+                        </div>
+                        <div class="whenToUseGreen whenToUseGreenBiggie">
+                            <img src="../img//tick.svg">
+                            <p>Если нужно ввести больше 5 слов, используйте многострочное<br>поле ввода.</p>
+                        </div>
+                        <div class="whenToUseGreen whenToUseGreenBiggie">
+                            <img src="../img//tick.svg">
+                            <p>Используйте поле ввода<br>для коротких текстовых<br>или цифровых значений<br>без предсказуемого формата.</p>
+                        </div>
+                        <div class="whenToUseGreen whenToUseGreenBiggie">
+                            <img src="../img//tick.svg">
+                            <p>Если вводимое значение имеет определенный формат, например, дд.мм.гг., используйте специальную версию поля<br>для ввода даты.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contentBlock">
+                    <h2>Название</h2>
+                    <p>Название поля пишется с заглавной буквы.</p>
+                    <div class="exampleMenuWrapper inputWrapper">
+                        <div class="myInput">
+                            <label for="exampleName">Название поля</label>
+                            <input type="text" id="exampleName" placeholder="Подсказка">
+                        </div>
+                    </div>
+                    <p>Называйте поле ввода существительным, указывающим что нужно ввести.</p>
+                    <div class="manyInputsWrapper">
+                        <div class="inputNameWrapper ">
+                            <span class="singleTabCaption correct">Правильно</span>
+                            <div class="myInput">
+                                <label for="exampleCOrrect">Место жительства</label>
+                                <input type="text" id="exampleCOrrect" placeholder="Город">
+                            </div>
+                        </div>
+                        <div class="inputNameWrapper">
+                            <span class="singleTabCaption incorrect">Неправильно</span>
+                            <div class="myInput">
+                                <label for="exampleInCOrrect">Введите место жительства</label>
+                                <input type="text" id="exampleInCOrrect" placeholder="Город">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="paddingTop32">Не ставьте двоеточие после названия: без него все понятно, оно только создает 
+                        лишний визуальный шум.</p>
+                    <div class="inputNameWrapper">
+                        <span class="singleTabCaption incorrect">Неправильно</span>
+                        <div class="myInput">
+                            <label for="exampleCOrrect2">Введите место жительства</label>
+                            <input type="text" id="exampleCOrrect2" placeholder="Город">
+                        </div>
+                    </div>
+                    <p class="paddingTop32">Большинство полей ввода используют название. Название размещается сверху
+                        (для форм, где требуется последовательное заполнение полей, например, регистрация) или слева (для форм, где заполняются всего несколько полей, например, настройки).</p>
+                    <div class="incorrectInputName">
+                        <div class="inputNameWrapper">
+                            <span class="singleTabCaption incorrect">Неправильно</span>
+                            <div class="myInput">
+                                <input type="text" id="exampleCOrrect3" placeholder="Город">
+                            </div>
+                        </div>
+                        <p>Место жительства</p>
+
+                    </div>
+                    
+                </div>
+
+                <div class="contentBlock">
+                    <h2>Размер и расположение</h2>
+                    <div class="manyTexts">
+                        <p>Ширина поля должна соответствовать ожидаемому количеству информации. Это подсказывает пользователю в какой форме от него ждут информацию, помогает пользователю убедиться, что он правильно заполнил поле.</p>
+                        <p>В рамках одной формы используйте 1-4 ширины для полей.</p>
+                        <p>Поля ввода можно использовать и без зеголовков.</p>
+                    </div>
+                    <div class="exampleMenuWrapper">
+                        <img src="../img/inputSizes1.svg">
+                    </div>
+                    <div class="exampleMenuWrapper">
+                        <img src="../img/inputSizes2.svg">
+                    </div>
+                    <p class="paddingTop32">Если название расположено слева, оно должно выравниваться по базовой линии текста в поле.</p>
+                    <div class="exampleMenuWrapper">
+                        <img src="../img/inputSizes3.svg">
+                    </div>
+                    <p class="paddingTop32">Название поля в несколько строк должно выравниваться по базовой линии<br>первой строки.</p>
+                    <div class="exampleMenuWrapper">
+                        <img src="../img/inputSizes4.svg">
+                    </div>
+                </div>
+
+                <div class="contentBlock">
+                    <h2>Состояния</h2>
+                    <div>
+                        <div class="inputsStatesWrapper">
+                            <p>По умолчанию</p>
+                            <div class="myInput">
+                                <input type="text" placeholder="Подсказка">
+                            </div>
+                        </div>
+                        <div class="inputsStatesWrapper">
+                            <p>При наведении</p>
+                            <div class="myInput" >
+                                <input id="hoverInput" type="text" placeholder="Подсказка" readonly>
+                            </div>
+                        </div>
+                        <div class="inputsStatesWrapper">
+                            <p>Фокус</p>
+                            <div class="myInput">
+                                <input type="text" placeholder="Подсказка" autofocus>
+                            </div>
+                        </div>
+                        <div class="inputsStatesWrapper">
+                            <p>Неактивен</p>
+                            <div class="myInput">
+                                <input type="text" placeholder="Подсказка" readonly disabled>
+                            </div>
+                        </div>
+                        <div class="inputsStatesWrapper">
+                            <p>Заполнен</p>
+                            <div class="myInput">
+                                <input id="FulledInput" type="text" placeholder="Текст" value="Текст" readonly>
+                            </div>
+                        </div>
+                        <div class="inputsStatesWrapper">
+                            <p>Подтверждение</p>
+                            <div class="myInput">
+                                <input id="greenInput" type="text" placeholder="Текст" value="Текст" readonly>
+                            </div>
+                        </div>
+                        <div class="inputsStatesWrapper">
+                            <p>Ошибка</p>
+                            <div class="myInput">
+                                <input id="redInput" type="text" placeholder="Текст" value="Текст" readonly>
+                            </div>
+                        </div>
+                        <div class="inputsStatesWrapper">
+                            <p>Предупреждение</p>
+                            <div class="myInput">
+                                <input id="orangeInput" type="text" placeholder="Текст" value="Текст" readonly>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="contentBlock">
+                    <h2>Валидация</h2>
+                    <p>Поле с ошибкой подсвечивается красной рамкой.</p>
+                    <div class="exampleMenuWrapper inputWrapper wideInput">
+                        <div class="inputsStatesWrapper">
+                            <p class="incorrectInputsStyle">Город</p>
+                            <div class="myInput">
+                                <input type="text" placeholder="Подсказка" value="Санкт-Екатеринбург" readonly>
+                                <div class="incorrectInputCaption">
+                                    <img src="../img/crossSmall.svg">
+                                    <p class="incorrect">Неверный город</p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <p>© 2023–2024 Университет ИТМО</p>
+                <caption><p>Учебный проект</p></caption>
+            </div>
+        </div>
+    </body>         
+</html>
+
+<script src="../script.js"></script>
