@@ -79,3 +79,13 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "flex";
     evt.currentTarget.className += " active";
 }
+
+
+let colors = document.getElementsByClassName('colorPalleteFooter')
+if(colors) {
+    for (const iterator of colors) {
+        iterator.children[0].children[0].addEventListener('click', () => {
+            navigator.clipboard.writeText('#' + iterator.children[0].innerHTML.split('#')[1])
+        })  
+    }
+}

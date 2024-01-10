@@ -27,14 +27,14 @@
     --neutral-40: #E7E8EA;
     --neutral-30: #EFF0F3;
     --neutral-20: #F5F6F8;
+
+    --white-80: rgba(255, 255, 255, 0.80);
     --white: #FFFFFF;
 
     --Main_grey-90: #232C44;
     --Main_grey-80: #3B4459;    
     --Main_grey-70: #6C7383;
     --Main_grey-50: #CED0D6;
-
-    --white-80: rgba(255, 255, 255, 0.80);
 
     --blue--120: #2767FB;
     --blue-100: #457BF8;
@@ -255,7 +255,7 @@ p {
     line-height: 48px
 }
 
-.manyTexts * {
+.manyTexts *, .colorTopWrapper, .checkboxValidationWrapper *,  .inputRadioWrapper, .paddingBot16{
     padding-bottom: 16px;
 }
 
@@ -273,7 +273,7 @@ p {
     list-style: none;
 }
 
-.aboutList li {
+.aboutList li, .paddingBot20 {
     padding-bottom: 20px;
 }
 
@@ -579,7 +579,7 @@ button{
 }
 
 .buttonDisabled{
-    background-color: var(--blue-20);
+    background-color: var(--blue-40);
 }
 
 .buttonSecondaryActive{
@@ -780,10 +780,6 @@ input[type="checkbox"]{
     margin-top: 28px;
 }
 
-.checkboxValidationWrapper * {
-    padding-bottom: 16px;
-}
-
 .checkboxValidationWrapper p{
     padding: 0;
 }
@@ -803,9 +799,6 @@ input[type="checkbox"]{
     gap: 28px;
 }
 
-.inputRadioWrapper {
-    padding-bottom: 16px;
-}
 
 input[type='radio'] + .radioError{
     width: 12px;
@@ -890,6 +883,7 @@ input[type='radio'] + .radioError{
     max-width: 210px;
     margin-top: 28px;
     margin-bottom: 28px;
+    border-radius: 24px;
 }
 
 .mainTypoWrapper span{
@@ -963,7 +957,7 @@ li::marker{
     margin-top: 0;
 }
 
-.leftWrapper p{
+.leftWrapper p, .marginBot20{
     margin-bottom: 20px;
 }
 
@@ -1054,7 +1048,7 @@ li::marker{
     height: 64px;
     padding: 40px 40px 40px 51px;
     margin-bottom: 28px;
-    margin-top: 8px;
+    margin-top: 24px;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
@@ -1141,14 +1135,18 @@ li::marker{
     height: 24px;
 }
 
+.colorPalleteFooter img:hover{
+    cursor: pointer;
+}
+
 .singleColor{
     width: 200px;
     height: 72px;
     border-radius: 8px 8px 0px 0px;
 }
 
-.colorTopWrapper{
-    padding-bottom: 16px;
+.manyTexts a:visited{
+    color: var(--blue-100);
 }
 
 .colorOpacity{
@@ -1313,11 +1311,12 @@ li::marker{
     padding: 93px 264px 113px 264px;
 }
 
-.myInput{
+.myInput, .myTextarea{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 
 .myInput label{
     width: 216px;
@@ -1474,5 +1473,271 @@ li::marker{
 input:disabled{
     border: 1px solid var(--neutral-60);
     background: var(--neutral-40);
+}   
 
+.selectTab{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.visibleSelect{
+    margin-bottom: 4px;
+    display: flex;
+    width: 216px;
+    padding: 8px 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    background: var(--white);
+    border: 1px solid var(--neutral-50);
+
+}
+
+.visibleSelect p{
+    color: var(--neutral-100);
+    font-family: Futura;
+    font-size: 20px;
+    line-height: 24px; 
+    max-width: 150px;
+    white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.selectOptions{
+    border-radius: 8px;
+    background: var(--white);   
+    padding: 8px;
+
+}   
+
+.selectOptions p{
+    display: flex;
+    width: 41px;
+    align-items: center;
+    padding: 8px 187px 8px 12px;
+    border-radius: 8px;
+}
+
+.selectOptions p:hover{
+    background: var(--neutral-20);
+}
+
+.selectTabContent{
+    height: 260px;
+    padding: 80px 256px;
+    width: 256px;
+    align-items: flex-start;
+}
+
+.visibleSelect img:hover{
+    cursor: pointer;
+}
+
+.selectedOption{
+    background: var(--neutral-40);
+}
+
+.hoveredOption{
+    background: var(--neutral-20);
+}
+
+#clickedInputSelect{
+    border: 1px solid var(--neutral-60  );
+background: var(--neutral-40);
+}
+
+#focusedInputSelect{
+    border: 1px solid var(--neutral-100);
+    background: var(---white);
+}
+
+#disabledInputSelect{
+    border: 1px solid var(--neutral-60);
+    background: var(--neutral-40);
+}
+
+#disabledInputSelect p{
+    color: var(--neutral-60);
+
+}
+
+#accentInputSelect{
+    border: 1px solid var(--blue-100);
+    background: var(--blue-100);
+    color: var(--white);
+}
+
+#greenInputSelect{
+    border: 1px solid var(--success-100);
+    background: var(--white);
+}
+
+#redInputSelect, #redInputSelect2{
+    border: 1px solid var(--error-100);
+    background: var(--white);
+}
+
+#orangeInputSelect{
+    border: 1px solid var(--attention-100);
+    background: var(--white);
+}
+
+.fullBorder{
+    border-radius: 24px;
+}
+
+.number{
+    background-color: var(--blue-100);
+    color: var(--white);
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.steps{
+    display: flex;
+    gap: 8px;
+}
+
+.stepsNormal p{
+    color: var(--neutral-60);
+}
+
+.stepsNormal .number{
+    background-color: var(--neutral-60);
+    color: var(--white);
+}
+
+.stepsNormal  .menuTab__selected::after{
+    border: 2px solid var(--neutral-60);
+}
+
+.tooltipTab{
+    height: 280px;
+    padding: 0;
+    width: 768px;
+}
+
+.twoIMgsWrapper{
+    display: flex;
+    gap: 8px;
+    padding-bottom: 16px;
+}
+
+.paddingBot12{
+    padding-bottom: 12px;
+}
+
+.SegmentedControl{
+    display: inline-flex;
+    padding: 2px;
+    align-items: center;
+    gap: 2.5px;
+    border-radius: 9px;
+    background: var(--neutral-30);
+}
+
+.SegmentedControl *{
+    display: flex;
+    padding: 6px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--neutral-30);
+    color: var(--blue-100);
+}
+
+.selectedControl{
+    background: var(--blue-100);
+    color: var(--white);
+}   
+
+.hoverControl{
+    background: var(--neutral-40);
+}
+
+.hoverControl::before{
+    content: '|';
+    position: absolute;
+    padding-right: 106.5px;
+    color: var(--neutral-50);
+}
+
+.SegmentedControlWrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 320px;
+    justify-content: flex-start;
+}
+
+.SegmentedControlWrapper span{
+    width: 73px;
+    margin-right: 40px;
+    margin-top: 16px;
+}
+
+.SegmentedControlWrapper span:last-child{
+    margin-right: 0;
+}
+
+.greyBack{
+    background-color: var(--neutral-20);
+    width: 384px;
+    height: 122px;
+    padding: 16px;
+    border-radius: 24px;
+
+}
+
+.whiteBack{
+    width: 330px;
+    padding: 24px 19px;
+    border-radius: 18px;
+    background: var(--white);
+}
+
+
+textarea{
+    padding: 8px 12px;
+    resize: none;
+    border-radius: 8px;
+    border: 1px solid var(--neutral-60);
+    background: var(--white);
+    width: 232px;
+    font-family: FuturaMedium;
+    color: var(--neutral-100);
+    font-size: 20px;
+    line-height: 24px; 
+}
+
+textarea::placeholder{
+    font-family: FuturaMedium;
+    color: var(--neutral-60);
+    font-size: 20px;
+
+    line-height: 24px; 
+}
+
+.textareaWrapper{
+    padding: 40px 48px;
+    border-radius: 24px;
+    background: var(--neutral-20);
+    width: 320px;
+}
+
+.textAreaStatesWrapper{
+    align-items: flex-start;
+}
+
+.textAreaWideExmp{
+    height: 114px;
+}
+
+.textAreaStatesWrapper p{
+    margin-top: 8px;
 }

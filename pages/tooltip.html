@@ -24,7 +24,7 @@
                     <a class="secondLevel" id="navbarSecondtLevel6_1" href="./buttons.html">Buttons</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_2" href="./checkbox.html">Checkbox</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_3" href="./radioButton.html">RadioButton</a>
-                    <a class="secondLevel activeSecondLevelSideNav" id="navbarSecondtLevel6_4" href="./modal.html">Modal</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_4" href="./modal.html">Modal</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_5" href="./icons.html">Icons</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_6" href="./calendar.html">DatePicker</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_7" href="./tags.html">Tags</a>
@@ -32,83 +32,82 @@
                     <a class="secondLevel" id="navbarSecondtLevel6_9" href="./segmentedControl.html">SegmentedControl</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_10" href="./toggle.html">Toggle</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_11" href="./textarea.html">Textarea</a>
-                    <a class="secondLevel" id="navbarSecondtLevel6_12" href="./tooltip.html">Tooltip</a>
+                    <a class="secondLevel activeSecondLevelSideNav" id="navbarSecondtLevel6_12" href="./tooltip.html">Tooltip</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_13" href="./select.html">Select</a>
                 </div> 
                 <a class="firstLevel" id="navbarFirstLevel7" href="./images.html">Изображения</a>
                 <a class="firstLevel" id="navbarFirstLevel8" href="./loading.html">Загрузка контена</a>
             </div>
         </div>
+
         <div class="page">
             <div class="mainContent">
-                <h1 class="beforeMenu">Modal</h1>
+                <h1 class="beforeMenu">DatePicker</h1>
                 <div class="contentBlock">
                     <div class="menuWrapper">
                         <div class="tab">
                             <button class="tablinks active" onclick="openCity(event, 'design')">Дизайн</button>
                         </div>
-                        
-                        <div id="design" class="tabcontent tabModal" style="display: flex;">
-                            <div class="singleTabWrapper">
-                                <div class="menuTab ">
-                                    <div class="modal">
-                                        <div>
-                                            <div class="crossWrapper">
-                                                <h2>Заголовок короткий или любой</h2>
-                                                <img src="../img/cross.svg"/>
-                                            </div>
-                                            <p>Текст сообщения для пользователя, если он длинный, то переносится на несколько строк.</p>
-                                        </div>
-                                        <div class="modalButtonWrapper">
-                                            <button class>Сохранить</button>
-                                            <button class="secondaryButton">Button</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div id="design" class="tabcontent tooltipTab" style="display: flex;" >
+                            <img src="../img/tooltipMain.svg">
                         </div>
                     </div>
                 </div>
+
                 <div class="contentBlock">
                     <h2>Когда использовать</h2>
-                    <div class="manyTexts">
-                        <p>Используйте модальное окно для второстепенного содержимого страниц, которое требуется только в некоторых случаях, или для того, чтобы сосредоточить внимание пользователя на совершаемом действии.</p>
-                        <p>Модальное окно появляется поверх страницы, затемняя ее. Это помогает сфокусировать внимание пользователя на конкретных действиях, не теряя при этом общий контекст.</p>
-                    </div>
-                    <div class="principlesBlock" style="padding-top: 28px;">
-                        <div class="whenToUseGreen whenToUseGreenAverage">
+                    <p class="paddingBot28">Используйте тултип для коротких поясняющих текстов, если необходимо дать разъяснение к деталям интерфейса, упомянутой информации или помочь<br>с заполнением полей.</p>
+                    <div class="principlesBlock whenToUseRadio ">
+                        <div class="whenToUseGreen">
                             <img src="../img//tick.svg">
-                            <p>Заголовок должен быть кратким (1-3 слова) и являться названием процесса или объекта.</p>
+                            <p>Тултипы могут вызываться как по ховеру, так и по клику.</p>
                         </div>
-                        <div class="whenToUseGreen whenToUseGreenAverage">
+                        <div class="whenToUseGreen">
                             <img src="../img//tick.svg">
-                            <p>В правом верхнем углу модального окна всегда должна быть кнопка закрытия 
-                            в виде крестика.</p>
+                            <p>Тултип можно закрыть и нажатием где угодно вне зоны тултипа.</p>
+                        </div>
+                        <div class="whenToUseGreen">
+                            <img src="../img//tick.svg">
+                            <p>Если тултип может закрыть важную<br>для пользователя информацию, это направление следует запретить для тултипа.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contentBlock">
+                    <h2>Как использовать</h2>
+                    <p>Тултип настраивается в зависимости от задачи и контента.</p>
+                    <p class="paddingTop28 paddingBot20">Используйте следующие варианты тултипов:</p>
+                    <ul class="ulWithDashes">
+                        <li class="paddingBot12">короткий текст без крестика;</li>
+                        <img class="paddingBot16" src="../img/tooltip1.svg">
+                        
+                        <li class="paddingBot12">длинный текст с крестиком;</li>
+                        <div class="twoIMgsWrapper">
+                            <img src="../img/tooltip2_1.svg">
+                            <img src="../img/tooltip2_2.svg">
                         </div>
 
-                    </div>
+                        <li class="">поясняющее изображение с описанием.</li>
+                        <img src="../img/tooltip3.svg">
+                    </ul>
                 </div>
-                <div class="contentBlock">
-                    <h2>Расположение на странице</h2>
-                    <p>По горизонтали модальное окно позиционируется по центру. По вертикали — <br>
-                        по центру и на 10% смещенным к верхней части окна браузера. </p>
-                    <div class="exampleMenuWrapper">
-                        <img src="../img/modal_example.svg" />
-                        </div>
-                </div>
+                
                 <div class="contentBlock">
                     <h2>Анатомия элемента</h2>
                     <p>Ниже представлен увеличенный элемент и его ключевые размеры исходя из модульной сетки дизайн-системы MEILE.</p>
                     <div class="exampleMenuWrapper">
-                       <img src="../img/modal_anatomy.svg" />
+                        <img src="../img/tooltip_Anatomy.svg">
                     </div>
                 </div>
+                
+
             </div>
             <div id="footer">
                 <p>© 2023–2024 Университет ИТМО</p>
                 <caption><p>Учебный проект</p></caption>
             </div>
         </div>
+
     </body>         
 </html>
 

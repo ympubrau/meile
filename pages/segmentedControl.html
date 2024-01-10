@@ -13,7 +13,7 @@
                 <a class="firstLevel" id="navbarFirstLevel2" href="./colors.html">Цвета</a>
                 <a class="firstLevel" id="navbarFirstLevel3" href="./typography.html">Типографика</a>
                 <a class="firstLevel" id="navbarFirstLevel4" href="./layout.html">Сетка</a>
-                <a class="firstLevel"  id="navbarFirstLevel5">Навигация</a>
+                <a class="firstLevel "  id="navbarFirstLevel5">Навигация</a>
                 <div id="secondLevel5" hidden>
                     <a class="secondLevel" id="navbarSecondtLevel5_1" href="./tabs.html">Tabs</a>
                     <a class="secondLevel" id="navbarSecondtLevel5_2" href="./breadcrumbs.html">BreadCrumbs</a>
@@ -24,12 +24,12 @@
                     <a class="secondLevel" id="navbarSecondtLevel6_1" href="./buttons.html">Buttons</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_2" href="./checkbox.html">Checkbox</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_3" href="./radioButton.html">RadioButton</a>
-                    <a class="secondLevel activeSecondLevelSideNav" id="navbarSecondtLevel6_4" href="./modal.html">Modal</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_4" href="./modal.html">Modal</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_5" href="./icons.html">Icons</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_6" href="./calendar.html">DatePicker</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_7" href="./tags.html">Tags</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_8" href="./input.html">Input</a>
-                    <a class="secondLevel" id="navbarSecondtLevel6_9" href="./segmentedControl.html">SegmentedControl</a>
+                    <a class="secondLevel activeSecondLevelSideNav" id="navbarSecondtLevel6_9" href="./segmentedControl.html">SegmentedControl</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_10" href="./toggle.html">Toggle</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_11" href="./textarea.html">Textarea</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_12" href="./tooltip.html">Tooltip</a>
@@ -39,70 +39,80 @@
                 <a class="firstLevel" id="navbarFirstLevel8" href="./loading.html">Загрузка контена</a>
             </div>
         </div>
+
         <div class="page">
             <div class="mainContent">
-                <h1 class="beforeMenu">Modal</h1>
+                <h1 class="beforeMenu">SegmentedControl</h1>
                 <div class="contentBlock">
                     <div class="menuWrapper">
                         <div class="tab">
                             <button class="tablinks active" onclick="openCity(event, 'design')">Дизайн</button>
                         </div>
                         
-                        <div id="design" class="tabcontent tabModal" style="display: flex;">
-                            <div class="singleTabWrapper">
-                                <div class="menuTab ">
-                                    <div class="modal">
-                                        <div>
-                                            <div class="crossWrapper">
-                                                <h2>Заголовок короткий или любой</h2>
-                                                <img src="../img/cross.svg"/>
-                                            </div>
-                                            <p>Текст сообщения для пользователя, если он длинный, то переносится на несколько строк.</p>
-                                        </div>
-                                        <div class="modalButtonWrapper">
-                                            <button class>Сохранить</button>
-                                            <button class="secondaryButton">Button</button>
-                                        </div>
-                                    </div>
+                        <div id="design" class="tabcontent whiteBackground tagsTab" style="display: flex;" >
+                            <div class="singleTabWrapper SegmentedControlWrapper">
+                                <div class="menuTab SegmentedControl">
+                                    <p class="selectedControl">Первый</p>
+                                    <p>Второй</p>
+                                    <p class="hoverControl">Третий</p>
                                 </div>
+                                <span class="singleTabCaption">Selected</span>
+                                <span class="singleTabCaption">Normal</span>
+                                <span class="singleTabCaption">Hover</span>
                             </div>
                         </div>
                     </div>
                 </div>
+            
+
                 <div class="contentBlock">
                     <h2>Когда использовать</h2>
-                    <div class="manyTexts">
-                        <p>Используйте модальное окно для второстепенного содержимого страниц, которое требуется только в некоторых случаях, или для того, чтобы сосредоточить внимание пользователя на совершаемом действии.</p>
-                        <p>Модальное окно появляется поверх страницы, затемняя ее. Это помогает сфокусировать внимание пользователя на конкретных действиях, не теряя при этом общий контекст.</p>
+                    <div class="principlesBlock whenToUseRadio ">
+                        <div class="whenToUseGreen">
+                            <img src="../img//tick.svg">
+                            <p>Переключатель используют, когда вариантов выбора немного: от трех<br>до пяти.</p>
+                        </div>
+                        <div class="whenToUseGreen">
+                            <img src="../img//tick.svg">
+                            <p>Старайтесь<br>не использовать переключатель из двух значений, потому что пользователи 
+                                не понимают, какой<br>из пунктов выбран.</p>
+                        </div>
+                        <div class="whenToUseGreen">
+                            <img src="../img//tick.svg">
+                            <p>Название переключателя формулируют так, чтобы название каждого пункта 
+                                не содержало повторяющуюся часть</p>
+                        </div>
                     </div>
-                    <div class="principlesBlock" style="padding-top: 28px;">
-                        <div class="whenToUseGreen whenToUseGreenAverage">
-                            <img src="../img//tick.svg">
-                            <p>Заголовок должен быть кратким (1-3 слова) и являться названием процесса или объекта.</p>
-                        </div>
-                        <div class="whenToUseGreen whenToUseGreenAverage">
-                            <img src="../img//tick.svg">
-                            <p>В правом верхнем углу модального окна всегда должна быть кнопка закрытия 
-                            в виде крестика.</p>
-                        </div>
+                </div>
 
-                    </div>
-                </div>
-                <div class="contentBlock">
-                    <h2>Расположение на странице</h2>
-                    <p>По горизонтали модальное окно позиционируется по центру. По вертикали — <br>
-                        по центру и на 10% смещенным к верхней части окна браузера. </p>
-                    <div class="exampleMenuWrapper">
-                        <img src="../img/modal_example.svg" />
-                        </div>
-                </div>
                 <div class="contentBlock">
                     <h2>Анатомия элемента</h2>
-                    <p>Ниже представлен увеличенный элемент и его ключевые размеры исходя из модульной сетки дизайн-системы MEILE.</p>
+                    <p>Ниже представлен элемент и его ключевые размеры исходя из модульной сетки дизайн-системы MEILE.</p>
                     <div class="exampleMenuWrapper">
-                       <img src="../img/modal_anatomy.svg" />
+                        <img src="../img/segmented_Anatomy.svg">
                     </div>
                 </div>
+
+                <div class="contentBlock">
+                    <h2>Цвет</h2>
+                    <div class="manyTexts paddingBot16">
+                        <p>Таб-кнопка при нажатии меняет цвет текста на белый и красится в Main_blue/100.</p>
+                        <p>При наведении таб-кнопка окрашивается в Main_grey/40.</p>
+                    </div>
+                    <div class="exampleMenuWrapper noCaptions greyBack">
+                        <div class="singleTabWrapper SegmentedControlWrapper whiteBack">
+                            <div class="menuTab SegmentedControl">
+                                <p class="selectedControl">Первый</p>
+                                <p>Второй</p>
+                                <p class="hoverControl">Третий</p>
+                            </div>
+                            <span class="singleTabCaption">Selected</span>
+                            <span class="singleTabCaption">Normal</span>
+                            <span class="singleTabCaption">Hover</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div id="footer">
                 <p>© 2023–2024 Университет ИТМО</p>

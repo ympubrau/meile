@@ -25,49 +25,60 @@
                     <a class="secondLevel" id="navbarSecondtLevel6_2" href="./checkbox.html">Checkbox</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_3" href="./radioButton.html">RadioButton</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_4" href="./modal.html">Modal</a>
-                    <a class="secondLevel activeSecondLevelSideNav" id="navbarSecondtLevel6_5" href="./icons.html">Icons</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_5" href="./icons.html">Icons</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_6" href="./calendar.html">DatePicker</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_7" href="./tags.html">Tags</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_8" href="./input.html">Input</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_9" href="./segmentedControl.html">SegmentedControl</a>
-                    <a class="secondLevel" id="navbarSecondtLevel6_10" href="./toggle.html">Toggle</a>
+                    <a class="secondLevel activeSecondLevelSideNav" id="navbarSecondtLevel6_10" href="./toggle.html">Toggle</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_11" href="./textarea.html">Textarea</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_12" href="./tooltip.html">Tooltip</a>
                     <a class="secondLevel" id="navbarSecondtLevel6_13" href="./select.html">Select</a>
+
                 </div> 
                 <a class="firstLevel" id="navbarFirstLevel7" href="./images.html">Изображения</a>
                 <a class="firstLevel" id="navbarFirstLevel8" href="./loading.html">Загрузка контена</a>
             </div>
         </div>
+
         <div class="page">
             <div class="mainContent">
-                <h1>Icons</h1>
+                <h1 class="beforeMenu">DatePicker</h1>
                 <div class="contentBlock">
-                    <div class="exampleMenuWrapper iconsTop">
-                        <img src="../img/icons_mainPic.svg" />
-                     </div>
-                </div>
-                <div class="contentBlock">
-                    <h2>Стиль и размер</h2>
-                    <div class="manyTexts">
-                        <p>Используйте иконки, чтобы ускорить распознавание объекта и привлечь внимание к действию, команде или разделу. Если сомневаетесь в иконке, вероятно, её вообще не нужно использовать.</p>
-                        <p>В дизайн-системе MEILE используются иконки с заливкой. Базовый набор состоит из иконок в стандартном размере 24×24. Они привязаны к пикселям <br>и оптимизированы для этого размера. </p>
-                    </div>
-                    <div class="exampleMenuWrapper" style="padding-bottom: 28px;">
-                        <img src="../img/icons_example.svg" />
-                    </div>
-                    <div class="manyTexts">
-                        <p>Используйте эти иконки в большинстве случаев. Если нужно применить иконку в увеличенном размере допустимо увеличить иконку масштабированием (параметр size).</p>
-                        <p>Иконки одноцветны. В иконках, как и в остальных местах интерфейса, мы используем фирменные цвета.</p>
+                    <div class="menuWrapper">
+                        <div class="tab">
+                            <button class="tablinks active" onclick="openCity(event, 'design')">Дизайн</button>
+                        </div>
+                        <div id="design" class="tabcontent toggleTab" style="display: flex;" >
+                            <img src="../img/toggleMain.svg">
+                        </div>
                     </div>
                 </div>
+
                 <div class="contentBlock">
-                    <h2>Рекомендации по использованию</h2>
-                    <div class="manyTexts">
-                        <p>Не меняйте стиль иконки. Иконки в наборе имеют одинаковый вес, поэтому хорошо смотрятся вместе. Если изменить заливку на линии, это затруднит прочтение и отделит ее от набора. Иконки визуально сбалансированы, поэтому можно располагать несколько пиктограмм рядом друг с другом.</p>
-                        <p>Старайтесь не использовать иконки для украшения — это отвлекает от основного действия. Учитывайте окружающий контекст: когда иконки слишком близко расположены, они создают визуальный шум и путают.</p>
+                    <h2>Когда использовать</h2>
+                    <p>Тогл переключает состояния. Например, включает или отключает уведомления<br>в настройках. При переключении тогла эффект наступает сразу. Поэтому тогл 
+                        не нуждается в кнопке «Сохранить».</p>
+                </div>
+
+                <div class="contentBlock">
+                    <h2>Размер и расположение</h2>
+                    <p>Тогл можно использовать и без названия.</p>
+                    <div class="exampleMenuWrapper">
+                        <img src="../img/toggleSize.svg">
                     </div>
                 </div>
+
+                <div class="contentBlock">
+                    <h2>Состояния</h2>
+                    <img src="../img/toggleStates.svg">
+                </div>
+                
+                <div class="contentBlock">
+                    <h2>Валидация</h2>
+                    <p>Если тогл нельзя использовать, заблокируйте его. Валидация не нужна.</p>
+                </div>
+                
 
             </div>
             <div id="footer">
@@ -75,6 +86,7 @@
                 <caption><p>Учебный проект</p></caption>
             </div>
         </div>
+
     </body>         
 </html>
 

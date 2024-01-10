@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+
+    <body>
+    <!-- Side navigation -->
+        <div class="sidenav">
+            <h1><a href="../index.html">Meile</a></h1>
+            <div class="sidenavWrapper" id="sidenavContent">
+                <a class="firstLevel" id="navbarFirstLevel1" href="./about.html">О дизайн системе</a>
+                <a class="firstLevel" id="navbarFirstLevel2" href="./colors.html">Цвета</a>
+                <a class="firstLevel" id="navbarFirstLevel3" href="./typography.html">Типографика</a>
+                <a class="firstLevel" id="navbarFirstLevel4" href="./layout.html">Сетка</a>
+                <a class="firstLevel"  id="navbarFirstLevel5">Навигация</a>
+                <div id="secondLevel5" hidden>
+                    <a class="secondLevel" id="navbarSecondtLevel5_1" href="./tabs.html">Tabs</a>
+                    <a class="secondLevel" id="navbarSecondtLevel5_2" href="./breadcrumbs.html">BreadCrumbs</a>
+                    <a class="secondLevel" id="navbarSecondtLevel5_3" href="./steps.html">Steps</a>
+                </div>
+                <a class="firstLevel activeSideNav" id="navbarFirstLevel6">Компоненты</a>
+                <div id="secondLevel6">
+                    <a class="secondLevel" id="navbarSecondtLevel6_1" href="./buttons.html">Buttons</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_2" href="./checkbox.html">Checkbox</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_3" href="./radioButton.html">RadioButton</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_4" href="./modal.html">Modal</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_5" href="./icons.html">Icons</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_5" href="./calendar.html">DatePicker</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_5" href="./tags.html">Tags</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_5" href="./input.html">Input</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_9" href="./segmentedControl.html">SegmentedControl</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_10" href="./toggle.html">Toggle</a>
+                    <a class="secondLevel activeSecondLevelSideNav" id="navbarSecondtLevel6_11" href="./textarea.html">Textarea</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_12" href="./tooltip.html">Tooltip</a>
+                    <a class="secondLevel" id="navbarSecondtLevel6_13" href="./select.html">Select</a>
+                </div> 
+                <a class="firstLevel" id="navbarFirstLevel7" href="./images.html">Изображения</a>
+                <a class="firstLevel" id="navbarFirstLevel8" href="./loading.html">Загрузка контена</a>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="mainContent">
+                <h1 class="beforeMenu">Input</h1>
+                <div class="contentBlock">
+                    <div class="menuWrapper">
+                        <div class="tab">
+                            <button class="tablinks active" onclick="openCity(event, 'design')">Дизайн</button>
+                        </div>
+                        
+                        <div id="design" class="tabcontent " style="display: flex;" >
+                            <div class="menuTab">
+                                <div class="myTextarea">
+                                    <p>Название многострочного поля</p>
+                                    <textarea rows="3" cols="38" name="text" placeholder="Подсказка" autofocus></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="contentBlock">
+                    <h2>Когда использовать</h2>
+                    <p>Используйте многострочное поле для ввода длинных строк и больших текстов.</p>
+                </div>
+
+                <div class="contentBlock">
+                    <h2>Название</h2>
+                    <p class="paddingBot28">Требования к названию многострочного поля такие же, как и у однострочного.</p>
+                    <div class="textareaWrapper ">
+                        <div class="myInput">
+                            <p>Название многострочного поля</p>
+                            <textarea rows="3" cols="38" name="text" placeholder="Подсказка"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contentBlock">
+                    <h2>Описание работы</h2>
+                    <div class="manyTexts paddingBot28">
+                        <p>По мере ввода высота поля автоматически увеличивается и уменьшается так,<br> 
+                            что всегда свободна одна строка. Это нужно, чтобы пользователь видел весь текст<br>  
+                            без прокрутки, и при этом по умолчанию поле было бы не очень высоким.</p>
+                        <p>Минимальная высота многострочного поля ввода — 3 строки, чтобы пользователю было понятно, что это не инпут, и можно вводить большой текст.</p>
+                    </div>
+                    <div class="manyInputsWrapper">
+                        <div class="myTextarea">
+                            <p class="correct">Правильно</p>
+                            <textarea rows="3" cols="38" name="text" placeholder="Подсказка"></textarea>
+                        </div>
+                        <div class="myTextarea">
+                            <p class="incorrect">Неправильно</p>
+                            <textarea rows="1" cols="38" name="text" placeholder="Подсказка"></textarea>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="contentBlock">
+                    <h2>Состояния</h2>
+                    <div>
+                        <div class="inputsStatesWrapper textAreaStatesWrapper">
+                            <p>По умолчанию</p>
+                            <div class="myTextarea">
+                                <textarea rows="3" cols="38" name="text" placeholder="Подсказка"></textarea>
+                            </div>
+                        </div>
+                        <div class="inputsStatesWrapper textAreaStatesWrapper">
+                            <p>При наведении</p>
+                            <div class="myTextarea">
+                                <textarea id="hoverInput" rows="3" cols="38" name="text" placeholder="Подсказка" ></textarea>
+                            </div>
+                        </div>
+                        <div class="inputsStatesWrapper textAreaStatesWrapper">
+                            <p>Фокус</p>
+                            <div class="myTextarea">
+                                <textarea rows="3" cols="38" name="text" placeholder="Подсказка" autofocus></textarea>
+                            </div>
+                        </div>
+                        <div class="inputsStatesWrapper textAreaStatesWrapper">
+                            <p>Неактивен</p>
+                            <div class="myTextarea">
+                                <textarea id="disabledInputSelect" rows="3" cols="38" name="text" placeholder="Подсказка"></textarea>
+                            </div>
+                        </div>
+                        <div class="inputsStatesWrapper textAreaStatesWrapper">
+                            <p>Заполнен</p>
+                            <div class="myTextarea">
+                                <textarea id="FulledInput" rows="3" cols="38" name="text" placeholder="Подсказка" readonly>Текст</textarea>
+                            </div>
+                        </div>
+                        <div class="inputsStatesWrapper textAreaStatesWrapper">
+                            <p>Подтверждение</p>
+                            <div class="myTextarea">
+                                <textarea id="greenInput" rows="3" cols="38" name="text" placeholder="Подсказка" readonly>Текст</textarea>
+                            </div>
+                        </div>
+                        <div class="inputsStatesWrapper textAreaStatesWrapper">
+                            <p>Ошибка</p>
+                            <div class="myTextarea">
+                                <textarea id="redInput" rows="3" cols="38" name="text" placeholder="Подсказка" readonly>Текст</textarea>
+                            </div>
+                        </div>
+                        <div class="inputsStatesWrapper textAreaStatesWrapper">
+                            <p>Предупреждение</p>
+                            <div class="myTextarea">
+                                <textarea id="orangeInput" rows="3" cols="38" name="text" placeholder="Подсказка" readonly>Текст</textarea>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="contentBlock">
+                    <h2>Валидация</h2>
+                    <p>Поле с ошибкой подсвечивается красной рамкой.</p>
+                    <div class="exampleMenuWrapper inputWrapper wideInput textAreaWideExmp">
+                        <div class="inputsStatesWrapper textAreaStatesWrapper">
+                            <p class="incorrectInputsStyle">Город</p>
+                            <div class="myTextarea">
+                                <textarea id="redInput" rows="3" cols="38" name="text" placeholder="Подсказка" readonly>Текст</textarea>
+                                <div class="incorrectInputCaption">
+                                    <img src="../img/crossSmall.svg">
+                                    <p class="incorrect">Неверный город</p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <p>© 2023–2024 Университет ИТМО</p>
+                <caption><p>Учебный проект</p></caption>
+            </div>
+        </div>
+    </body>         
+</html>
+
+<script src="../script.js"></script>
