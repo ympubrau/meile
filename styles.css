@@ -945,11 +945,13 @@ li::marker{
     padding-bottom: 0 !important;
 }
 
+
 .leftWrapper{
     display: flex;
     flex-direction: column;
     width: 430px;
-    border-right: 1px solid var(--neu);
+    border-right: 1px solid var(--neutral-60);
+    margin-right: 44px;
 }
 
 .rightWrapper{
@@ -1107,7 +1109,7 @@ li::marker{
     padding-bottom: 24px;
 }
 
-.mainTypoWrapper div:nth-last-child(-n+2) {
+.mainTypoWrapper div:nth-last-child(-n+1) {
     width: 66px;
     padding-left: 22px;
 }
@@ -1777,4 +1779,8 @@ textarea::placeholder{
 .myTextarea .incorrectInputCaption p{
     margin-top: 0;
     padding-top: 0;
+}
+
+.customWidth{
+    width: 690px;
 }
